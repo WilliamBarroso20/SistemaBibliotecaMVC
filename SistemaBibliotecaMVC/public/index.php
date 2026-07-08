@@ -6,17 +6,17 @@ if (!isset($_GET['url'])) {
 }
 
 // 1. Requerimos todos los controladores que vamos a usar.
-require_once __DIR__ . '/app/controllers/AutorController.php';
-require_once __DIR__ . '/app/controllers/CategoriaController.php';
-require_once __DIR__ . '/app/controllers/EditorialController.php';
-require_once __DIR__ . '/app/controllers/DevolucionController.php';
-require_once __DIR__ . '/app/controllers/EmpleadoController.php';
-require_once __DIR__ . '/app/controllers/LectorController.php';
-require_once __DIR__ . '/app/controllers/LibroController.php';
-require_once __DIR__ . '/app/controllers/MultaController.php';
-require_once __DIR__ . '/app/controllers/PrestamoController.php';
-require_once __DIR__ . '/app/controllers/ReservaController.php';
-require_once __DIR__ . '/app/controllers/DashboardController.php'; 
+require_once __DIR__ . '/../app/controllers/AutorController.php';
+require_once __DIR__ . '/../app/controllers/CategoriaController.php';
+require_once __DIR__ . '/../app/controllers/EditorialController.php';
+require_once __DIR__ . '/../app/controllers/DevolucionController.php';
+require_once __DIR__ . '/../app/controllers/EmpleadoController.php';
+require_once __DIR__ . '/../app/controllers/LectorController.php';
+require_once __DIR__ . '/../app/controllers/LibroController.php';
+require_once __DIR__ . '/../app/controllers/MultaController.php';
+require_once __DIR__ . '/../app/controllers/PrestamoController.php';
+require_once __DIR__ . '/../app/controllers/ReservaController.php';
+require_once __DIR__ . '/../app/controllers/DashboardController.php';
 // 2. Capturamos la URL. Si no existe, enviamos al inicio por defecto
 $url = $_GET["url"] ?? "inicio";
 
