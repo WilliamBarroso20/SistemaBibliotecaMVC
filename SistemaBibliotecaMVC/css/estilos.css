@@ -1,0 +1,53 @@
+/* Configuración del diseño base */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Menú lateral fijo de alto impacto */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #212529;
+}
+
+/* Enlaces del menú lateral */
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #ced4da;
+    padding: 12px 20px;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: #343a40;
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+/* Contenedor del contenido del sistema */
+.main-content {
+    margin-left: 240px;
+    padding: 40px;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        height: auto;
+        padding-top: 20px;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
